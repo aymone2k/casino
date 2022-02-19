@@ -20,7 +20,6 @@ public class Casino {
 		
 		System.out.println("============== FIN DU JEUX ============");
 	}
-/* voir pour mise supérieure à 1000e et mise inférieure à 0e */
-// cleanner le code
+
 	
 }
