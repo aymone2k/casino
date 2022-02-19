@@ -3,14 +3,11 @@ package casino;
 
 public class Game {
 
-	public static boolean game(int budget, int mise, int nbMystere) {
+	public static boolean game(int budget, int mise, int nbMystere, int nbPlay) {
 		//methode pour vérifier si le nbre mystere est trouvé 
 	
 		//System.out.println(nbMystere);
-		System.out.println("Veuillez saisir un nombre entre 0 et 22 ");
-		int nbPlay = Casino.scanner.nextInt();
-		System.out.println(nbPlay);
-		System.out.println(nbMystere);
+		
 		
 		if(nbPlay == nbMystere) {
 			System.out.println("BRAVO! NOUS DOUBLONS VOTRE MISE, VOUS GAGNEZ: " +mise*2+ "€");

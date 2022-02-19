@@ -3,10 +3,11 @@ package casino;
 public class TryGame {
 
 	
-	public static boolean tryGame(int nbTentatives, int nbMystere){
+	public static boolean tryGame(int nbTentatives, int nbMystere, int nbPlay){
 		// retournnera le nombre de tentatives restantes 
-			
-		while(nbTentatives>0 ) {
+		//System.out.println(nbPlay);
+		//System.out.println(nbMystere);
+		while(nbTentatives>0 && nbPlay != nbMystere) {
 			
 			//continuer à jouer
 			if(nbTentatives == 1) {
