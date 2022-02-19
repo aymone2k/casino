@@ -2,7 +2,7 @@ package casino;
 
 public class PlaySystem {
 
-	public static void playSystem(int budget, int mise, int nbMystere, int nbTentatives ) {
+	public static void playSystem(int budget, int mise, int nbTentatives , int nbMystere) {
 		do {
 			System.out.println("Votre budget est de :" +budget + "€");
 			System.out.println("Veuillez saisir un montant de mise:");
@@ -14,6 +14,6 @@ public class PlaySystem {
 				
 				mise =0;//reset mise
 				nbTentatives -=1;
-		}while(TryGame.tryGame(nbTentatives) && PlayAgain.playAgain(budget, mise));
+		}while(TryGame.tryGame(nbTentatives, nbMystere) && PlayAgain.playAgain(budget, mise));
 	}
 }

@@ -10,12 +10,14 @@ public class Game {
 		System.out.println("Veuillez saisir un nombre entre 0 et 22 ");
 		int nbPlay = Casino.scanner.nextInt();
 		System.out.println(nbPlay);
+		System.out.println(nbMystere);
 		
 		if(nbPlay == nbMystere) {
 			System.out.println("BRAVO! NOUS DOUBLONS VOTRE MISE, VOUS GAGNEZ: " +mise*2+ "€");
 			//créditer le compte
 			budget +=(mise * 2);
 			System.out.println("VOTRE BUDGET RESTANT EST DE: " +budget + "€");
+			
 			return true;
 		}else {
 			System.out.println("DOMMAGE! VOUS PERDEZ: " +mise+ "€");

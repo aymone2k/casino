@@ -12,7 +12,7 @@ public class PlayAgain {
 						//continuer à jouer si le player souhaite rester
 							System.out.println("continuer à jouer? :(y/n)");
 							String yes = Casino.scanner.next();
-							if(yes.equals( "y")) {
+							if(yes.equals( "y") || yes.equals( "Y")) {
 								if( budget>=mise) {
 									
 								return true;

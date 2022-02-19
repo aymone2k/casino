@@ -8,17 +8,16 @@ public class Casino {
 	public static int budget = 1000;
 	public static int mise = 0;
 	public static int nbMystere= (new Random()).nextInt(22);
+//	public static int nbPlay;
+	//public static int nbPlaySave;
+	public static long userAge;
+	public static String userName;
 	public static Scanner scanner = new Scanner(System.in);
 	
 	
 	public static void main(String[] args) {
-		System.out.println("        ============= BIENVENUE, JOUONS AU JEU DU CHIFFRE MYSTERE ============== ");
-				
-		System.out.println("Règle du jeu: Vous devez choisir un nombre aleatoire en 0 et 22; Vous disposez de "+nbTentatives + " tentatives");
-		System.out.println("        *******************************************************************************************");
-		
-		//PlaySystem.playSystem(budget, mise, nbMystere, nbTentatives);
-		FindAge.getAge();
+	
+		Salutations.salut(userName, userAge,budget, mise, nbTentatives, nbMystere );
 		
 		System.out.println("============== FIN DU JEUX ============");
 	}
