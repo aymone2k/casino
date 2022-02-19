@@ -36,9 +36,9 @@ public class FindAge {
 				System.out.println("Vous avez "+ userAge +" an(s)");
 				long limitAge = 18;
 				int result = Long.compare(userAge, limitAge);
-				System.out.println(userAge);
-				System.out.println(limitAge);
-				System.out.println(result);
+				//System.out.println(userAge);
+				//System.out.println(limitAge);
+				//System.out.println(result);
 				//verif age
 				if(result >= 0) {
 					//jouer

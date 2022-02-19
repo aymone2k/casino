@@ -7,7 +7,7 @@ public class PlayAgain {
 	public static boolean playAgain(int budget, int mise) {
 	
 		//continuer à jouer en fonction du budget
-			if(budget>0 ) {
+			if(budget>0) {
 						
 						//continuer à jouer si le player souhaite rester
 							System.out.println("continuer à jouer? :(y/n)");
@@ -27,7 +27,7 @@ public class PlayAgain {
 					
 						
 		}else {
-			System.out.println("impossible de jouer vous n'avez plus de budget");
+			System.out.println("impossible de jouer vous n'avez pas assez de budget");
 			return false;
 			}
 											
